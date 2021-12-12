@@ -1,0 +1,22 @@
+Pasos Vale:
+
+Cree un repositorio nuevo en GitHub llamado "proyectoFinal"
+
+Cree una carpeta en mi computadora, con doble click entre a Git Bash ("Git Bash here")
+
+Con el comando git init cree repositorio en la carpeta que me habia posicionado
+
+En VisualStudioCode con Open Folder abri la carpeta proyectoFinal
+
+Abri nueva terminal y con los siguientes comandos cree el proyecto:
+
+	1- python -m django startproject ProyectoFinal
+	2- cd ProyectoFinal (para pararme en el proyecto creado)
+	3- python manage.py migrate
+	4- python manage.py runserver
+
+
+
+
+
+
