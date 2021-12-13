@@ -15,8 +15,46 @@ Abri nueva terminal y con los siguientes comandos cree el proyecto:
 	3- python manage.py migrate
 	4- python manage.py runserver
 
+Como queria subir una primera version con el proyecto creado pero sin mucho avance hice el primer push, siguiendo estos pasos en Git Bash:
 
+	1- git status para ver que cambios hubo (me mostro en rojo lo que se modifico)
+	2- git add . para agregar todos los cambios
+	3- git status para verificar que los cambios estaban en verde
+	4- git commit -m "Nombre de la primera version"
+	5- git remote add origin https... (copie el codigo del GitHub)
+	5- git push origin master para enviar los cambios al repositorio remoto
 
+En settings de Github fui a Manage Access - add people y puse los usuarios de Anibal y Sol 
+
+Luego cree el archivo views.py en el proyecto que no lo genera automaticamente e importe: from django.http import HttpResponse (entiendo que no vamos
+a usar el archivo views del proyecto pero por las dudas lo cree e importe eso.
+
+Para crear una App realice los siguientes pasos:
+
+	1- comando python manage.py startapp App (como nombre a la App le puse App nomas)
+	2- En settings.py del proyecto en la parte de installed_app agregue la App que creamos
+	3- Con el comando python manage.py check App chequee que estaba ok
+
+Luego relacione el urls del proyecto con el urls del proyecto haciendo lo siguiente:
+
+	1a- En urls del proyecto: from django.urls.conf import include
+	1b- En urls del proyecto, en urlspatterns agregamos path('App/, inlcude('App.urls'))
+	2- Cree el archivo urls.py en la App
+	3- Importe lo siguiente:
+		from django.urls import path
+		from App import views
+	4- Deje escrito el modelo de path a incluir cuando tengamos las vistas
+
+Luego en el archivo views.py de la App importe al igual que en hice con el proyecto HttpRespose
+
+Cree la carpeta templates dentro de App, y en esta una subcarpeta llamada App
+
+Para probar si estaba todo funcionando cree la vista inicio con una httpresponde que diga unicamente "Esto es una prueba de inicio" e inclui
+la vista en urls 
+
+Probe el lin con App/inicio y funciono ok.
+
+Antes de subir una nueva version al GitHub ejecute el comando python manage.py runserver para ver si estaba todo ok 
 
 
 
