@@ -7,7 +7,8 @@ from django.http import HttpResponse
 #cuando creemos formularios y modelos recordar importarlos en este archivo de vistas
 
 #Creo la vista inicio para ver que esta todo ok:
+
 def inicio(request):
-    return HttpResponse("Esto es una prueba de inicio")
+    #return HttpResponse("Esto es una prueba de inicio")
     
-    # return render(request, 'AppCoder/estadio.html')
+    return render(request, 'App/inicio.html')

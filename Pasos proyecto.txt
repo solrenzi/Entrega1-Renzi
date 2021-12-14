@@ -1,4 +1,4 @@
-Pasos Vale:
+VERSION 1:
 
 Cree un repositorio nuevo en GitHub llamado "proyectoFinal"
 
@@ -25,6 +25,8 @@ Como queria subir una primera version con el proyecto creado pero sin mucho avan
 	5- git push origin master para enviar los cambios al repositorio remoto
 
 En settings de Github fui a Manage Access - add people y puse los usuarios de Anibal y Sol 
+
+VERSION 2:
 
 Luego cree el archivo views.py en el proyecto que no lo genera automaticamente e importe: from django.http import HttpResponse (entiendo que no vamos
 a usar el archivo views del proyecto pero por las dudas lo cree e importe eso.
@@ -54,7 +56,26 @@ la vista en urls
 
 Probe el lin con App/inicio y funciono ok.
 
-Antes de subir una nueva version al GitHub ejecute el comando python manage.py runserver para ver si estaba todo ok 
+Antes de subir una nueva version al GitHub ejecute el comando python manage.py runserver para ver si estaba todo ok 	
+
+Con los mismos comandos que use anteriormente subi la version 2.
+
+VERSION 3:
+
+Dentro de App cree dos carpetas: templates y static, dentro de ellas cree un subcarpeta llamado App
+
+Descargue un template: https://startbootstrap.com/previews/business-casual
+
+Copie todos los archivos que se descargaron en la carpeta static/App
+
+Cree el archivo inicio.html y copie todo lo que decia el archivo index.html
+
+Al principio luego de head agregue {% load static %}
+
+En todos los casos que en el html decia href o src y hacia referencia a una carpeta lo modifique agregando {% static 'App/ ... %}
+
+
+
 
 
 
