@@ -12,3 +12,15 @@ def inicio(request):
     #return HttpResponse("Esto es una prueba de inicio")
     
     return render(request, 'App/inicio.html')
+
+def ciudades(request):
+ 
+    return render(request, 'App/ciudades.html')
+
+def restaurantes(request):
+    
+    return render(request, 'App/restaurantes.html')
+
+def alojamientos(request):
+    
+    return render(request, 'App/alojamientos.html')
