@@ -1,0 +1,32 @@
+{% extends "App/padre.html" %} 
+{% load static %} 
+
+    {% block contenidoNombre %}
+        <title> Buscar alojamiento </title>
+    {% endblock %}
+
+
+    {% block contenidoTitulos %}
+                <span class="site-heading-upper text-primary mb-3">Blog de viajes</span>
+                <span class="site-heading-lower">Buscar alojamiento</span>
+    {% endblock %}
+
+{% block contenidoInfo %}
+           
+{% endblock %}
+
+{% block infoExtra %}
+
+    <form action="/alojamientoFormulario/" method="POST"> {% crsf_token %}
+        <p>Nombre  <input type="text" name="nombre"></p>
+        <p>Tipo de alojamiento <input type="text" name="tipoDeAlojamiento"></p>
+        <p>Calificacion <input type="number" name="calificacion"></p>
+
+        <input type="submit" value="BUSCAR!">
+
+    </form>
+
+{% endblock %}
+
+
+     

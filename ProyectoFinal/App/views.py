@@ -1,15 +1,13 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from App.models import Ciudades, Restaurantes, Alojamientos
+
 
 # Create your views here.
 
-#COMENTARIOS INTERNOS DEL GRUPO, ANTES DE ENTREGAR BORRARLOS!
-#cuando creemos formularios y modelos recordar importarlos en este archivo de vistas
-
-#Creo la vista inicio para ver que esta todo ok:
 
 def inicio(request):
-    #return HttpResponse("Esto es una prueba de inicio")
+    #return HttpResponse("Esto es una prueba de inicio") - Ok funciono
     
     return render(request, 'App/inicio.html')
 
@@ -24,3 +22,15 @@ def restaurantes(request):
 def alojamientos(request):
     
     return render(request, 'App/alojamientos.html')
+
+def dejaTuComentario(request):
+    
+    return render(request, 'App/dejaTuComentario.html')
+
+def alojamientoFormulario(request):
+    
+    return render(request, 'App/alojamientoFormulario.html')
+    
+    
+    
+    

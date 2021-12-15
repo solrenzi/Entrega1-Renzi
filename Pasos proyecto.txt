@@ -74,6 +74,22 @@ Al principio luego de head agregue {% load static %}
 
 En todos los casos que en el html decia href o src y hacia referencia a una carpeta lo modifique agregando {% static 'App/ ... %}
 
+Subi la version al GitHub
+
+VERSION 4:
+
+Copie uno de los templates que descargamos y cree el template padre, agregue load static al igual que con el template de inicio y
+
+modifique todos los src y href que iban dirigidos a las carpetas
+
+Esta template padre la copie en los html: ciudades, restaurantes y alojamientos
+
+Modifique el html ciudades para que sea coherente, agregue los nombres y alguns imagenes. Para los demas html tambien lo hice pero sin agregar
+informacion real.
+
+VERSION 5:
+
+Entiendo nos queda pendiente: cambiar el nombre como pedia la PPT, crear los models y los formularios - hacer el readme
 
 
 
